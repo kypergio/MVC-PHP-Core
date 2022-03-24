@@ -13,4 +13,4 @@ if (empty($action))
 $ctrlName = $controller . "Controller";
 include "./controllers/$ctrlName.php";
 $ctrl = new $ctrlName;
-$ctrl->{$action}();
+$ctrl->{$action}($id);
